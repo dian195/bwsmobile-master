@@ -1,0 +1,15 @@
+nvm install 10.16.3
+nvm use 10.16.3
+npm install -g ionic
+npm install -g cordova
+
+npm i -g native-runcor
+
+install gradle 7.6, set di PATH
+
+ionic cordova platform add android
+
+ionic serve (untuk versi web)
+
+cordova run android --device (untuk running di android)
+

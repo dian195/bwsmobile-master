@@ -1,0 +1,7 @@
+{
+  "name": "bwsmobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

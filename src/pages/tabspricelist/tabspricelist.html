@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Leasing
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list *ngIf="listLeasing">
+    <ion-item *ngFor="let item of listLeasing">
+      <h2 style="color: #0066b1;" text-left (tap)="opendetail(item)"><b>{{item.leasing_name}}</b></h2>
+    </ion-item>
+  </ion-list>
+</ion-content>

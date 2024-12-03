@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Guest Book</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <super-tabs toolbarColor="button" toolbarBackground="light" tabsPlacement="top" enableTabsSwipe="false" id="Guest">
+    <super-tab [root]="page1" title="Open" id="Open"></super-tab>
+    <super-tab [root]="page2" title="Closed" id="Closed"></super-tab>
+  </super-tabs>
+</ion-content>
